@@ -17,7 +17,6 @@ html, body {
   justify-content: space-between;
   background-color: #00BAF0;
   background: linear-gradient(to left);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #FFF;
   height: 50px;
   padding: 1em;
@@ -128,11 +127,17 @@ html, body {
 }
 
 .container {
-    position:absolute;
+    position: relative;  
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
+}
+
+.logo-img {
+    float: left;
+    position: relative;
+    margin: 10px 15px 15px 10px;
 }
 
 .container h1 {
@@ -146,9 +151,11 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    position: relative;
+    position:relative;
     width: 100vh;
     height: 550px;
+    margin: 0 auto;
+    flex-shrink: 0;
 }
 
 .myDiv {
