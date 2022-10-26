@@ -3,6 +3,9 @@
 html, body {
   margin: 0;
   height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  padding: 0;
 }
 
 * {
@@ -10,12 +13,17 @@ html, body {
   box-sizing: border-box;
 }
 
+.container-fluid{
+  margin: 0;
+  padding: 0;
+}
+
 .top-nav {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #00BAF0;
+  background-color: rgb(0, 186, 240);
   background: linear-gradient(to left);
   color: #FFF;
   height: 50px;
@@ -33,6 +41,12 @@ html, body {
 .menu > li {
   margin: 0 1rem;
   overflow: hidden;
+}
+
+.menu > li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4em;
 }
 
 .menu-button-container {
@@ -124,14 +138,7 @@ html, body {
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
-}
 
-.container {
-    position: relative;  
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
 }
 
 .logo-img {
@@ -147,34 +154,60 @@ html, body {
 }
 
 .home {
-    background-image: url(images/pic3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    position:relative;
-    width: 100vh;
-    height: 550px;
     margin: 0 auto;
-    flex-shrink: 0;
+}
+
+.home img{
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  position:relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.landing{
+  background: rgba(0,0,0,0.42);
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left:35%;
+  color: #fff   ;
 }
 
 .myDiv {
     width: 50%;;
-    height: 100px;
+    height: 100%;
     float: left;
     background-image: url(images/home1.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 }
+.myDiv #productText{
+  font-family: "Raleway";
+  float: right;
+  align-items: flex-start;
+  width: 50%;
+  font-size: 1.2em;
+  color: #000;
+}
 
 .seconddiv {
     margin-left: 50%;
     height: 100%;
+    
+}
+
+.seconddiv #aboutText {
+  float: right;
+  font-family: "Raleway";
 }
 
 
 
 span {
+    font-family: "Raleway";
     display: inline-block;
     vertical-align: middle;
     line-height: normal;
@@ -188,7 +221,13 @@ span {
   }
 
 .footer p {
+    font-family: "Raleway";
     margin: 0 auto;
     line-height: 1.7;
     text-align: center;
+  }
+
+  #icon{
+    margin-right: 5px;
+    padding-right: 5px;
   }
