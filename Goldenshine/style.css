@@ -1,6 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 html, body {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   height: 100%;
   width: 100%;
@@ -9,7 +10,7 @@ html, body {
 }
 
 * {
-  font-family: "Raleway";
+  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
 
@@ -185,12 +186,10 @@ html, body {
     background-repeat: no-repeat;
 }
 .myDiv #productText{
-  font-family: "Raleway";
   float: right;
   align-items: flex-start;
   width: 50%;
   font-size: 1.2em;
-  color: #000;
 }
 
 .seconddiv {
@@ -201,13 +200,11 @@ html, body {
 
 .seconddiv #aboutText {
   float: right;
-  font-family: "Raleway";
 }
 
 
 
 span {
-    font-family: "Raleway";
     display: inline-block;
     vertical-align: middle;
     line-height: normal;
@@ -221,7 +218,6 @@ span {
   }
 
 .footer p {
-    font-family: "Raleway";
     margin: 0 auto;
     line-height: 1.7;
     text-align: center;
