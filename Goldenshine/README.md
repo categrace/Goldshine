@@ -1,1 +1,0 @@
-Golden shine supplies

@@ -1,1 +1,1 @@
-# Goldshine
+Golden shine supplies
