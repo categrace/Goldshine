@@ -8,6 +8,11 @@ html, body {
   scroll-behavior: smooth;
   padding: 0;
 }
+@media screen and (min-width: 80rem) {
+  .container {
+    margin: 1em 2em;
+  }
+}
 
 * {
   font-family: 'Poppins', sans-serif;
@@ -98,6 +103,12 @@ html, body {
 #menu-toggle:checked + .menu-button-container .menu-button::after {
   margin-top: 0px;
   transform: rotate(-405deg);
+}
+
+@media (min-width: 600px) {
+  .column {
+    width: 50%;
+  }
 }
 
 @media (max-width: 700px) {
@@ -221,6 +232,7 @@ span {
     margin: 0 auto;
     line-height: 1.7;
     text-align: center;
+    font-size: medium;
   }
 
   #icon{
