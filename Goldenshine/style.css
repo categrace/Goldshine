@@ -165,7 +165,17 @@ html, body {
     justify-content: center;
 }
 
-.home {
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+ .home {
     margin: 0 auto;
 }
 
@@ -179,14 +189,14 @@ html, body {
   overflow: hidden;
 }
 
-.landing{
+/* .landing{
   background: rgba(0,0,0,0.42);
   z-index: 2;
   position: absolute;
   top: 50%;
   left:35%;
   color: #fff   ;
-}
+} */
 
 .myDiv {
     width: 50%;;
